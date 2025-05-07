@@ -49,6 +49,8 @@ export default class Feladat {
         let html = `❌`;
         resultElem.insertAdjacentHTML("beforeend", html);
       }
+
+      window.dispatchEvent(new CustomEvent("counter", { detail: joE }));
     });
   }
 }
